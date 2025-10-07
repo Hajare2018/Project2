@@ -1,0 +1,9 @@
+// Javascript is single-threaded but uses and event loop to handle asyc tasks without blocking.
+
+console.log('first');
+
+setTimeout(() => {
+console.log('Second')
+}, 0);
+
+console.log('Third')
