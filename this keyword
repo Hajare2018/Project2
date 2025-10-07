@@ -1,0 +1,14 @@
+const user = {
+  name: "Shailesh",
+  greet: function() {
+    console.log('Hi, I am' + this.name);
+  }
+};
+
+user.greet(); 
+
+const greetfunc = user.greet;
+greetfunc();
+
+const boundGreet = user.greet.bind(user);
+boundGreet();
