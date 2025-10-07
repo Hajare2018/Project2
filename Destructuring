@@ -1,0 +1,18 @@
+// Array Destructuring
+const colors = ['red', 'green', 'blue'];
+const [first, second] = colors;
+console.log(first)
+console.log(second)
+
+// Object Destructuring
+const Person = {name: 'John', age: 30, city: 'NYC'};
+const {name, age} = Person;
+console.log(name);
+
+// function Paramerers
+function printUser({name, age}) {
+console.log(`${name} is ${age} years old`)
+} 
+
+printUser(person);
+
