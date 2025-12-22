@@ -63,3 +63,21 @@ function reverseString (str) {
 }
 
 console.log(reverseString(input));
+
+
+// 3. Fibonacci Series
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+    let num = 10; 
+    let num1 = 0; 
+    let num2 = 1;
+function fibonacci () {
+    for (let i = 2; i < num; i++) {
+        let num3 = num1 + num2;
+        console.log(num3)
+        num1 = num2
+        num2 = num3
+    }
+}
+fibonacci()
+
+
