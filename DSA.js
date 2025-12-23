@@ -118,3 +118,24 @@ for (let i = 1; i <= num; i++) {
         }
         console.log(str)
     }
+
+
+// print the sequence
+let num = 5;
+
+function series(num) {
+    let fib = [1, 1];
+    let str = "";
+
+    for (let i = 0; i < num; i++) {
+        if (i >= 2) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+        }
+
+        str += fib[i];
+        console.log(str);
+    }
+}
+
+series(num);
+
