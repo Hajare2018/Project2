@@ -93,3 +93,28 @@ function main (num) {
 }
 
 console.log(main(num));
+
+// Input = 5
+// output
+// 1
+// 11
+// 112
+// 1123
+// 11235
+let num = 5;
+let str = "";
+    
+for (let i = 1; i <= num; i++) {
+        if (i === 1) {
+            str = "1";
+        } else if (i === 2) {
+            str += "1"
+        } else if (i === 3) {
+            str += "2"
+        } else if (i === 4) {
+            str += "3"
+        } else if (i === 5) {
+            str += "5"
+        }
+        console.log(str)
+    }
