@@ -80,19 +80,17 @@ function fibonacci () {
 }
 fibonacci()
 
-let num = 5;
+// 4. Factorial of a Number
 
-function main (num) {
-    let factorial = 1;
-    
-    for (let i = 1; i <=num; i++) {
-       factorial = factorial * i
+function findFactorial (num) {
+    let output = 1;
+    for (let i = 1; i <= num; i++) {
+        output *= i
     }
-    
-    return factorial;
+    return output;
 }
 
-console.log(main(num));
+console.log(findFactorial(5))
 
 // Input = 5
 // output
